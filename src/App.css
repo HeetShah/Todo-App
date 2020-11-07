@@ -1,16 +1,16 @@
 body {
-  background-color: #9266ff;
+  background-color: #dbf6e9;
 }
 
 .App {
-  background-color: #3f2160;
+  background-color: #9ab3f5;
   min-height: 500px;
   width: 400px;
-  margin: 40px auto;
+  margin: 100px auto;
 }
 
 #to-do-form input {
-  background-color: rgb(27, 112, 137);
+  background-color: #595b83;
   border: 0;
   width: 200px;
   height: 50px;
