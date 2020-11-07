@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
 import ListItems from './ListItems'
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {faTrash} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faTrash);
 
 class App extends React.Component {
 
@@ -15,6 +19,8 @@ constructor (props) {
   }
   this.handleInput = this.handleInput.bind(this);
   this.addItem = this.addItem.bind(this);
+  this.deleteItem = this.deleteItem.bind(this);
+  this.setUpdate = this.setUpdate.bind(this);
 }
 
 handleInput(e) {
@@ -42,6 +48,29 @@ addItem(e){
   }
 }
 
+deleteItem(key) {
+  const filteredItems = this.state.items.filter(item => 
+    item.key !== key); 
+    this.setState({
+      items: filteredItems
+    })
+
+}
+
+
+setUpdate(text, key){
+
+  const items = this.state.items;
+  items.map(item => {
+    if(item.key===key){
+      item.text=text;
+    }
+  })
+    this.setState({
+    items: items
+  })
+}
+
   render(){
     return (
       <div className="App">
@@ -53,7 +82,11 @@ addItem(e){
             <button type="submit">Add</button>
           </form>
         </header>
-        <ListItems items={this.state.items}></ListItems>
+        <ListItems items={this.state.items}
+         deleteItem = {this.deleteItem}
+         setUpdate ={this.setUpdate}>
+        </ListItems>
+
         </div>
     );
     
