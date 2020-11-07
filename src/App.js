@@ -58,10 +58,12 @@ deleteItem(key) {
 }
 
 
+
 setUpdate(text, key){
 
   const items = this.state.items;
-  items.map(item => {
+  // eslint-disable-next-line array-callback-return
+  items.map(item=> {
     if(item.key===key){
       item.text=text;
     }
