@@ -1,7 +1,10 @@
 # To-Do Application
 
 
-I made this for an Intro to ReactJS workshop which I hosted for the Community Code Day (https://communitycodeday.com/) hacakthon. To see it in action, follow these steps:
+I made this for an Intro to ReactJS workshop which I hosted for the Community Code Day (https://communitycodeday.com/) hacakthon. The purpose of this workshop was to introduce basic concepts of ReactJS such as components, state management, props, and put them altogether to build this todo web app.
+
+
+To see it in action, follow these steps:
 
 1. Clone the repo
 2. ``npm install``
