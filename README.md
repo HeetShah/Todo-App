@@ -1,7 +1,7 @@
 # To-Do Application
 
 
-I made this for an Intro to ReactJS workshop for the Community Code Day (https://communitycodeday.com/) hacakthon. To see it in action:
+I made this for an Intro to ReactJS workshop which I hosted for the Community Code Day (https://communitycodeday.com/) hacakthon. To see it in action, follow these steps:
 
 1. Clone the repo
 2. ``npm install``
